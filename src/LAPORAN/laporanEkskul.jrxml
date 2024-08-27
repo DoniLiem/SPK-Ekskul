@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporanEkskul" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="00a02f2e-f37a-4d33-a3dd-91115790addf">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="ZGJzcGsuZSBBUyAsMTA0LDk3LGMyMzczNTNiLTc0OWMtNDlmOC1hYWY0LTRiMmE5ZjUxN2FmNDs="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="dbspk"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `namaE`,
+	`noidE`,
+	pembina,
+	ja
+FROM dbspk.e
+order by noidE]]>
+	</queryString>
+	<field name="namaE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="namaE"/>
+		<property name="com.jaspersoft.studio.field.label" value="namaE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="e"/>
+	</field>
+	<field name="noidE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="noidE"/>
+		<property name="com.jaspersoft.studio.field.label" value="noidE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="e"/>
+	</field>
+	<field name="pembina" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="pembina"/>
+		<property name="com.jaspersoft.studio.field.label" value="pembina"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="e"/>
+	</field>
+	<field name="ja" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ja"/>
+		<property name="com.jaspersoft.studio.field.label" value="ja"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="e"/>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#5D9ABA" uuid="c4c03e79-3d3f-49e8-98d6-ade8d020b6d8"/>
+				<staticText>
+					<reportElement x="258" y="10" width="300" height="43" forecolor="#FFFFFF" uuid="bda0981b-f96e-4356-891f-383498b0a149"/>
+					<textElement>
+						<font size="24" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SMA Negeri 1 Cigombong]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="270" y="50" width="265" height="37" forecolor="#FFFFFF" uuid="f704d519-aebb-4906-b4fd-7dff78284d72"/>
+					<textElement textAlignment="Center">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[7R23+9J8, Watesjaya, Kec. Cigombong, Kabupaten Bogor, Jawa Barat 16110]]></text>
+				</staticText>
+				<image>
+					<reportElement x="40" y="7" width="79" height="79" uuid="0f12d249-8833-4e7d-b09b-9a4cd04ca964"/>
+					<imageExpression><![CDATA["C:/[TUGAS AKHIR MARET- AGUSTUS 2024]/LOGO/logo smancigo.png"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="30">
+			<staticText>
+				<reportElement x="150" y="0" width="270" height="30" uuid="f65c8242-3c2e-4212-81d2-70d52fc8408e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Laporan Ekstrakurikuler]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="42">
+			<line>
+				<reportElement x="-20" y="41" width="595" height="1" forecolor="#666666" uuid="492f0f0d-d38a-49ca-84f5-40f53188f971"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="160" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="58b00426-a788-45f2-b1b1-b0936fcdf73a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="79ebe92c-53b7-4dd6-a095-ac97125a358f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Ekstrakurikuler]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="160" y="0" width="116" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="d12359e2-f982-4de7-a790-0063297654d0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="00b51851-3d06-4228-99c0-2f9b0d4bc87f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. ID Ekstrakurikuler]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="276" y="0" width="138" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="509afb9a-2e0a-475f-93dd-47b7c124328a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fa7824a7-d6f2-424c-9512-d32a8c1540c4"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pembina]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="414" y="0" width="138" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="5aba83f4-32d0-46a6-ba90-547365501467">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aaa87f69-1ab6-4fb8-a7f2-1cd6f43773eb"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jumlah Anggota]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="feec2e73-3ecd-4e43-8df2-3caf326ee96e"/>
+			</line>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="0" width="160" height="20" uuid="73ea9ebf-f2f4-40e5-8929-2a1a4799a637">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="79ebe92c-53b7-4dd6-a095-ac97125a358f"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namaE}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="160" y="0" width="116" height="20" uuid="a5c843b9-3307-4051-a797-ec35a9a74040">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="00b51851-3d06-4228-99c0-2f9b0d4bc87f"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noidE}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="276" y="0" width="138" height="20" uuid="cd42998e-3868-4f85-b354-b5a5d5253746">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fa7824a7-d6f2-424c-9512-d32a8c1540c4"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pembina}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="414" y="0" width="138" height="20" uuid="6509734f-f330-4180-bdd0-ebb3443593c1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aaa87f69-1ab6-4fb8-a7f2-1cd6f43773eb"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ja}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="86">
+			<line>
+				<reportElement x="-20" y="85" width="595" height="1" forecolor="#666666" uuid="01a7c3d2-7cbc-4ece-add4-0546b3bbb3cd"/>
+			</line>
+			<staticText>
+				<reportElement x="400" y="0" width="60" height="16" uuid="4d095f56-d8cd-4d67-ac5c-80399ce01bf6"/>
+				<text><![CDATA[Cigombong,]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="460" y="0" width="95" height="16" uuid="f79182c1-6d41-4b90-900b-e44da95c4e0b"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="400" y="69" width="144" height="16" uuid="7e43144a-f9ef-4fed-8dd8-10f82315e427"/>
+				<text><![CDATA[( Dr. Drs. Raya Erwana, M.Pd.)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="16" width="84" height="16" uuid="79206c34-e9b2-489e-a52b-28c998c50e07"/>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

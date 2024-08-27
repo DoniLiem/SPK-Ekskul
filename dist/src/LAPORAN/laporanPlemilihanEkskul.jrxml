@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporanPlemilihanEkskul" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8796bba7-3547-4df4-a929-2c17bf9bdc30">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="ZGJzcGsucGUgQVMgLDM3LDEyNCxhMDQwY2ZlOS1jYjFhLTQ3MzEtYTQ4My1lNmY0MDY2N2IyNjE7"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="dbspk"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `noidPE`,
+	rank,
+	`namaPD`,
+	ekskul,
+	`hasilBobot`
+FROM dbspk.pe
+order by noidPE]]>
+	</queryString>
+	<field name="noidPE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="noidPE"/>
+		<property name="com.jaspersoft.studio.field.label" value="noidPE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pe"/>
+	</field>
+	<field name="rank" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="rank"/>
+		<property name="com.jaspersoft.studio.field.label" value="rank"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pe"/>
+	</field>
+	<field name="namaPD" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="namaPD"/>
+		<property name="com.jaspersoft.studio.field.label" value="namaPD"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pe"/>
+	</field>
+	<field name="ekskul" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ekskul"/>
+		<property name="com.jaspersoft.studio.field.label" value="ekskul"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pe"/>
+	</field>
+	<field name="hasilBobot" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="hasilBobot"/>
+		<property name="com.jaspersoft.studio.field.label" value="hasilBobot"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="pe"/>
+	</field>
+	<background>
+		<band height="1">
+			<line>
+				<reportElement x="-20" y="0" width="595" height="1" forecolor="#666666" uuid="eca8a2fc-a5d1-45d3-a3da-9d92f7ed192b"/>
+			</line>
+		</band>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#5D9ABA" uuid="cf85cd42-3ad8-4998-a007-b46f7fab610a"/>
+				<staticText>
+					<reportElement x="258" y="10" width="300" height="43" forecolor="#FFFFFF" uuid="82c541a7-e188-472c-9101-be0bcd8e2e1c"/>
+					<textElement>
+						<font size="24" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SMA Negeri 1 Cigombong]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="270" y="50" width="265" height="37" forecolor="#FFFFFF" uuid="314dc629-2c2b-4dc7-9d86-d6a2f6555275"/>
+					<textElement textAlignment="Center">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[7R23+9J8, Watesjaya, Kec. Cigombong, Kabupaten Bogor, Jawa Barat 16110]]></text>
+				</staticText>
+				<image>
+					<reportElement x="40" y="7" width="79" height="79" uuid="68994584-f1c5-4734-be6d-1184887090cc"/>
+					<imageExpression><![CDATA["C:/[TUGAS AKHIR MARET- AGUSTUS 2024]/LOGO/logo smancigo.png"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="30">
+			<staticText>
+				<reportElement x="150" y="0" width="270" height="30" uuid="c4bfe75f-961e-48a5-94c5-09629ec27dbd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Laporan Pemilihan Ekstrakurikuler]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="42">
+			<line>
+				<reportElement x="-20" y="41" width="595" height="1" forecolor="#666666" uuid="6d1844ab-4e4a-4577-bc5c-bae2ed8e447e"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="92" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="86959f74-4a26-4000-90eb-28d642e38c24">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aabeeb2d-7e89-4e01-87b0-3a74393d2f95"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No.ID Pemilihan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="92" y="0" width="68" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="66739392-a2c9-4fa1-a0ea-f496952dc28c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ba3cc834-5394-4f20-90ff-73087e4887c3"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ranking]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="160" y="0" width="153" height="41" forecolor="#006699" backcolor="#E6E6E6" uuid="68d92d8d-746e-4b2f-b548-f42cb21c8285">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="289bf9ce-15a1-4303-bc4f-f21aeeb0dbca"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Peserta Didik]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="313" y="0" width="131" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="0d94194e-2d88-4063-8c1e-68aa92dffff1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6877f8bd-5d81-498e-b321-b1f60059b877"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ekstrakurikuler]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="444" y="0" width="111" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="6a0ea184-76b4-4c15-b4ff-1e569381e2ce">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="12487bf1-fcd2-4fa4-9e8a-66092c8f8359"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bobot Hasil]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="60cda3e9-4828-44ff-aa2f-1eb9d037c4e0"/>
+			</line>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="0" width="92" height="20" uuid="884235bf-b904-4ff7-921f-cb86b627287d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aabeeb2d-7e89-4e01-87b0-3a74393d2f95"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noidPE}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="92" y="0" width="68" height="20" uuid="f8146b9e-1b76-4834-a12b-e770b41b2d2f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ba3cc834-5394-4f20-90ff-73087e4887c3"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rank}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="160" y="0" width="153" height="20" uuid="0101f78f-9161-46d9-8fc0-768c2478cf59">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="289bf9ce-15a1-4303-bc4f-f21aeeb0dbca"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namaPD}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="313" y="0" width="131" height="20" uuid="5a9411c5-e68a-48f6-af1a-c585d9cb1d4f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6877f8bd-5d81-498e-b321-b1f60059b877"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ekskul}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="444" y="0" width="111" height="20" uuid="7e1b2eea-4e91-43fb-9000-831a78049f40">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="12487bf1-fcd2-4fa4-9e8a-66092c8f8359"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hasilBobot}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="85">
+			<staticText>
+				<reportElement x="400" y="0" width="60" height="16" uuid="9d2bc8f9-6c3a-4db4-a05e-01e0507562c3"/>
+				<text><![CDATA[Cigombong,]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="460" y="0" width="95" height="16" uuid="ce7bd8d3-73e7-4222-b770-e424441c8844"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="400" y="69" width="144" height="16" uuid="72208555-290c-4a19-a7a3-874f9ad6ae58"/>
+				<text><![CDATA[( Dr. Drs. Raya Erwana, M.Pd.)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="16" width="84" height="16" uuid="ecf92bad-1e8e-4b04-9522-5f8026a69083"/>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporanSubKriteria" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="360d6d5a-89bb-4b45-9947-5445785c5933">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="ZGJzcGsuc2sgQVMgLDg4LDE2NSxiMmE0NzZhZC05NmVmLTQ0NjktODc1Yi0yYzBiZmUwOWZjNzU7"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="dbspk"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `namaK`,
+	ekskul,
+	`noidSK`,
+	`namaSK`,
+	`bobotSK`,
+	`prioritasSK`
+FROM dbspk.sk
+order by namaK]]>
+	</queryString>
+	<field name="namaK" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="namaK"/>
+		<property name="com.jaspersoft.studio.field.label" value="namaK"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sk"/>
+	</field>
+	<field name="ekskul" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ekskul"/>
+		<property name="com.jaspersoft.studio.field.label" value="ekskul"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sk"/>
+	</field>
+	<field name="noidSK" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="noidSK"/>
+		<property name="com.jaspersoft.studio.field.label" value="noidSK"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sk"/>
+	</field>
+	<field name="namaSK" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="namaSK"/>
+		<property name="com.jaspersoft.studio.field.label" value="namaSK"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sk"/>
+	</field>
+	<field name="bobotSK" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="bobotSK"/>
+		<property name="com.jaspersoft.studio.field.label" value="bobotSK"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sk"/>
+	</field>
+	<field name="prioritasSK" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="prioritasSK"/>
+		<property name="com.jaspersoft.studio.field.label" value="prioritasSK"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sk"/>
+	</field>
+	<background>
+		<band height="1">
+			<line>
+				<reportElement x="-20" y="0" width="595" height="1" forecolor="#666666" uuid="c0a096a8-0e18-4ec1-928c-377362df4d8a"/>
+			</line>
+		</band>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#5D9ABA" uuid="de4262ad-a9b3-42e6-b3bf-c04c25e7d3d5"/>
+				<staticText>
+					<reportElement x="258" y="10" width="300" height="43" forecolor="#FFFFFF" uuid="a3218cda-1f8c-41cc-b0d4-ea341059bedb"/>
+					<textElement>
+						<font size="24" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SMA Negeri 1 Cigombong]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="270" y="50" width="265" height="37" forecolor="#FFFFFF" uuid="a98d70ce-155e-4222-ace3-3e5e75314530"/>
+					<textElement textAlignment="Center">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[7R23+9J8, Watesjaya, Kec. Cigombong, Kabupaten Bogor, Jawa Barat 16110]]></text>
+				</staticText>
+				<image>
+					<reportElement x="40" y="7" width="79" height="79" uuid="8ce2e051-dc8c-4980-8a38-7cb776f18783"/>
+					<imageExpression><![CDATA["C:/[TUGAS AKHIR MARET- AGUSTUS 2024]/LOGO/logo smancigo.png"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="30">
+			<staticText>
+				<reportElement x="150" y="0" width="270" height="30" uuid="fba8906d-ba6a-4e4a-bab0-2fc207d859ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Laporan Sub-Kriteria]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="42">
+			<line>
+				<reportElement x="-20" y="41" width="595" height="1" forecolor="#666666" uuid="0e15d89d-c97f-4f43-815b-b1e8275ac614"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="92" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="63ccc7b2-fec1-4f06-b369-ea2128d336ea">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6581bd00-2613-45ea-bb5d-1b78cd1c3a93"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="92" y="0" width="107" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="ea548355-6684-4b96-8bda-3f4517044bf4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="48d9ac2a-2bab-4c05-a93f-3420f9d79251"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Esktrakurikuler]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="200" y="0" width="76" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="77886967-b81a-442a-ae69-7e87ed163f8f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a25f0cfb-57c0-400f-905d-00973af7ae43"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. ID Sub-Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="276" y="0" width="92" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="e2533ffe-435c-4ccd-b41d-2e90aba74461">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a020f77e-b32a-46c8-a133-361cfc11f17f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sub-Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="368" y="0" width="122" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="03d600f3-aaa8-448f-8d9a-8e2f5e47bb61">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6220b95-0e58-48a8-aa1a-5f4524e2f45b"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prioritas Sub-Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="490" y="0" width="64" height="40" forecolor="#006699" backcolor="#E6E6E6" uuid="665fb21e-b228-47a5-9659-b9b9bf11a903">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="31247553-1e9c-4b4b-b4e8-ce2b8a10a3c6"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bobot Prioritas]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="5b5727ac-d870-4ad6-b0a6-ec87f77af6a4"/>
+			</line>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="0" width="92" height="20" uuid="3f50c800-86e7-4cba-aa4f-e642beb2e219">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6581bd00-2613-45ea-bb5d-1b78cd1c3a93"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namaK}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="92" y="0" width="108" height="20" uuid="e74622a2-6b5a-4786-9f02-d02072a4af84">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="48d9ac2a-2bab-4c05-a93f-3420f9d79251"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ekskul}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="200" y="0" width="76" height="20" uuid="ec859f27-949f-42e2-a990-61d5f33c6e76">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a25f0cfb-57c0-400f-905d-00973af7ae43"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noidSK}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="276" y="0" width="92" height="20" uuid="bf934c9f-33f8-423f-b691-a9cfde35f48d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a020f77e-b32a-46c8-a133-361cfc11f17f"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namaSK}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="368" y="0" width="122" height="20" uuid="761dddfe-e4d2-4f0e-9040-afd2b94da8be">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="31247553-1e9c-4b4b-b4e8-ce2b8a10a3c6"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prioritasSK}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="490" y="0" width="64" height="20" uuid="d8844665-4474-4e30-872d-19cdfffc0ed4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6220b95-0e58-48a8-aa1a-5f4524e2f45b"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bobotSK}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="86">
+			<staticText>
+				<reportElement x="400" y="0" width="60" height="16" uuid="a5cff2f0-8631-4240-a1df-450b62679af3"/>
+				<text><![CDATA[Cigombong,]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="460" y="0" width="95" height="16" uuid="a2c91a41-6a9d-4d15-bd0d-7a10afd39cb0"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="400" y="69" width="144" height="16" uuid="73926321-f9d8-46a7-8c3d-6b2925a9f7ae"/>
+				<text><![CDATA[( Dr. Drs. Raya Erwana, M.Pd.)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="16" width="84" height="16" uuid="93d4df54-7ee1-4afd-9129-ed5489bcca59"/>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
